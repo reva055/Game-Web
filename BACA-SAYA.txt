@@ -1,0 +1,18 @@
+WEBSITE PERKEMBANGAN TEORI ATOM
+Disusun oleh Reva Mayangsari (A1F025011)
+
+Cara menjalankan: buka index.html di browser (tanpa instalasi, tanpa internet kecuali video YouTube).
+Hosting gratis: unggah folder ini ke Netlify, Vercel, atau GitHub Pages.
+
+Isi:
+- index.html : website lengkap (halaman + materi + game + musik), sudah satu file siap pakai.
+- src/monopoli-atom-dengan-musik.html : game Monopoli Atom dengan lagu pembuka (bisa dibuka sendiri).
+- src/backsound.mp3 : lagu tampilan awal/menu (looping). src/backsound-kuis.mp3 : lagu saat kuis/permainan dimulai (looping).
+- src/music.js / music.tpl.js : pemutar musik (2 lagu, loop, tombol ON/OFF). Di index.html pemutar ada di halaman utama; lagu otomatis jeda di halaman Video. Lagu tertanam (base64) sehingga tetap satu file.
+- src/template-halaman.html : template halaman; %%GAME%% adalah tempat game disisipkan.
+
+Mengubah materi : array S di bagian <script> index.html.
+Mengubah video  : cari pJEk52iN5Rk lalu ganti dengan ID video YouTube Anda.
+Mengubah soal game : array C di bagian game (petak dan pertanyaan), CARDS, dan MAXR (jumlah putaran).
+
+Latar bertema kimia: adegan laboratorium ada di <svg id="scene"> pada src/template-halaman.html (dibuat dari skrip, boleh diedit langsung). Latar game ada di CSS body dan #chem pada src/monopoli-atom-dengan-musik.html.
